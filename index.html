@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة الأطيبان A. M. B لتمور الوادي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-page" class="page">
+        <div class="logo">
+            <img src="img1.png" alt="Logo">
+            <h1>شركة الأطيبان A. M. B لتمور الوادي</h1>
+        </div>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </div>
+
+    <div id="main-page" class="page" style="display: none;">
+        <div class="logo">
+            <img src="img1.png" alt="Logo">
+            <h1>شركة الأطيبان A. M. B لتمور الوادي</h1>
+        </div>
+        <div id="clock"></div>
+        <div id="date"></div>
+
+        <div class="supplier-section">
+            <h2>إضافة مورد جديد</h2>
+            <form id="supplier-form">
+                <label for="supplier-id">رقم المورد:</label>
+                <input type="text" id="supplier-id" name="supplier-id" required>
+                <label for="supplier-name">اسم المورد:</label>
+                <input type="text" id="supplier-name" name="supplier-name" required>
+                <label for="supplier-phone">رقم الهاتف:</label>
+                <input type="text" id="supplier-phone" name="supplier-phone" required>
+                <label for="supplier-address">عنوان المورد:</label>
+                <input type="text" id="supplier-address" name="supplier-address" required>
+                <label for="supplier-type">نوع المورد:</label>
+                <select id="supplier-type" name="supplier-type" required>
+                    <option value="ذكر">ذكر</option>
+                    <option value="انثى">انثى</option>
+                </select>
+                <button type="submit">إضافة المورد</button>
+            </form>
+
+            <table id="supplier-table">
+                <thead>
+                    <tr>
+                        <th>رقم المورد</th>
+                        <th>اسم المورد</th>
+                        <th>رقم الهاتف</th>
+                        <th>عنوان المورد</th>
+                        <th>نوع المورد</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Supplier data will be inserted here -->
+                </tbody>
+            </table>
+
+            <div class="buttons">
+                <button id="save-data">حفظ البيانات</button>
+                <button id="delete-data">حذف البيانات</button>
+                <button id="restore-data">استعادة البيانات</button>
+                <button id="print-data">طباعة البيانات</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
